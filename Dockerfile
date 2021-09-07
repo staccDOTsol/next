@@ -24,4 +24,4 @@ RUN adduser -S nextjs -u 1001
 
 EXPOSE 3000
 
-CMD ["yarn", "start:prod"]
+CMD ["yarn", "start"]
