@@ -22,6 +22,6 @@ RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
 
 
-EXPOSE 3000
+EXPOSE 80
 
-CMD ["yarn", "start"]
+CMD ["yarn", "start:prod"]
