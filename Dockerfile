@@ -20,8 +20,9 @@ ENV NODE_ENV production
 
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
-
-CHOWN nextjs:nodejs ./.next ./.next
+COPY --from=build ./.next next2
+COPY --from=build --chown=nextjs:nodejs ./.next2 ./.next
+# Copy the build output to replace the default nginx contents.
 
 USER nextjs
 
