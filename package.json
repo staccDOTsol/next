@@ -1,0 +1,16 @@
+{
+  "name": "demo-nextjs",
+  "version": "1.0.0",
+  "description": "A demo of Next.js on WeDeploy",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start:prod": "npm run build && next start",
+    "postinstall": "echo 'It worked!'"
+  },
+  "dependencies": {
+    "next": "^4.2.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
